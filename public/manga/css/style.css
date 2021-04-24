@@ -1,0 +1,1213 @@
+/* Подключение шрифтов */
+/*======================*/
+@font-face {
+	font-family: CityBoysSoft-Book;
+	src: url("../fonts/CityBoysSoft-Book.otf");
+}
+
+/* Общие настройки стилей */
+/*=========================*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: CityBoysSoft-Book;
+	font-size: 14pt;
+	background-color: #eee;
+}
+
+div.content {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+div.wrap_content h2.not {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	padding: 5px;
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	transition: .2s;
+	color: #ff6700;
+}
+
+a:not(:hover) {
+	transition: .2s;
+}
+
+form p {
+	padding: 5px 0 5px 0;
+}
+
+h3 {
+	margin: 10px 0 10px 0;
+}
+
+div.line {
+	width: 100%;
+	border: solid 2px rgba(0, 0, 0, 0.3);
+	margin: 10px 0 10px 0;
+}
+
+
+/* Стили для полей формы */
+/*=========================*/
+input[type=text],input[type=number],input[type=password], select, textarea,  input[type=file] {
+	width: 700px;
+	height: 42px;
+	padding-left: 5px;
+	font-size: 14pt;
+	border: solid 1px rgba(0, 0, 0, 0.3);
+}
+
+input[type=button], input[type=submit] {
+	width: 250px;
+	height: 42px;
+	color: white;
+	font-size: 14pt;
+	background-color: #555;
+	border: none;
+}
+
+input.half, select.half {
+	width: 440px;
+	margin-right: 7px;
+}
+
+input.min {
+	width: 125.5px;
+}
+
+input[type=button].min {
+	width: 191px;
+}
+
+input[type=file] {
+	padding: 10px;
+	width: 649px;
+	min-height: 50px;
+}
+
+textarea {
+	padding: 5px;
+	height: 200px;
+	font-family: CityBoysSoft-Book;
+}
+
+textarea.images {
+	width: 100%;
+	height: 300px;
+}
+
+/* Настройки стиля хедера */
+/*=========================*/
+header {
+	height: 50px;
+	margin-bottom: 30px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+header nav {
+	line-height: 50px;
+	font-size: 14pt;
+}
+
+/* Настройки стиля контентной части */
+/*====================================*/
+main {
+	min-height: calc(100vh - 160px);
+}
+
+/* Настройка стилей для основных обёрток */
+div.wrap_content {
+	padding: 20px;
+	border: solid 1px rgba(0, 0, 0, 0.3);
+	background-color: rgba(255, 255, 255, 0.9);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	overflow: auto;
+	margin: 10px 0 10px 0;
+	min-height: 10px;
+}
+
+div.wrap_content h2 {
+	margin-bottom: 10px;
+}
+
+div.wrap_content div.wrap_left {
+	position: relative;
+	float: left;
+	width: 820px;
+	min-height: 30px;
+}
+
+div.wrap_content div.wrap_right {
+	width: 320px;
+	padding: 10px;
+	margin-left: 10px;
+	float: left;
+	min-height: 30px;
+	border-radius: 3px;
+	border: solid 1px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+div.wrap_content div.wrap_right a {
+	padding: 0;
+	cursor: pointer;
+}
+
+/*Настройки стилей для превью обложки*/
+/*====================================*/
+div.wrap_right div.preview_cover {
+	width: 300px;
+}
+
+div.wrap_right div.preview_cover img {
+	display: none;
+	object-fit: cover;
+	position: absolute;
+	width: 300px;
+	height: 410px;
+}
+
+div.wrap_right div.preview_cover div.touch_slide {
+	width: 50px;
+	height: 50px;
+	display: inline-table;
+	border: solid 1px black;
+}
+
+/* Стили для списка манги */
+/*=========================*/
+div.wrap_list_manga {
+	border-top: solid 3px rgba(0,0,0,0.5);
+	border-bottom: solid 3px rgba(0,0,0,0.5);
+}
+
+div.list_manga {
+	min-height: 33px;
+	padding: 10px 0 10px 0;
+	overflow: hidden;
+	border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+}
+
+div.list_manga:hover {
+	transition: .2s;
+	padding-left: 5px;
+	border-left: solid 3px rgba(0, 0, 0, 1);
+	border-bottom: solid 1px rgba(255, 103, 0, 1);
+}
+
+div.list_manga:not(:hover) {
+	transition: .2s;
+}
+
+div.list_manga span {
+	background: url('https://www.freepngimg.com/thumb/graphic_design/55593-4-gallery-image-png-image-high-quality.png');
+	background-size: 100% 100%;
+    -webkit-user-select: none;
+	color: transparent;
+	position: relative;
+	top: 2px;
+}
+
+/* Стили для футера */
+/*====================*/
+/*footer {
+	height: 50px;
+	margin-top: 30px;
+	text-align: center;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	background-color: rgba(255, 255, 255, 0.9);
+}*/
+
+/* Стили для страницы манги */
+/*============================*/
+div.manga p{
+	padding: 5px 0 5px 0;
+}
+div.manga div.wrap_left  h1 {
+	padding: 0 0 5px 0;
+	font-size: 26pt;
+}
+div.manga div.wrap_left h1 span.category {
+	color: gray;
+	font-size: 16pt;
+}
+/* Стили для обложек */
+div.manga div.cover_image {
+	width: 322px;
+	height: 472px;
+	padding: 10px;
+	margin-right: 10px;
+	float: left;
+	border: solid 1px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+}
+div.manga div.cover_image img {
+	display: none;
+	object-fit: cover;
+	position: absolute;
+	width: 300px;
+	height: 450px;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Стили для действий */
+div.manga div.manga_actions {
+	width: 460px;
+	min-height: 100px;
+	margin-bottom: 10px;
+	float: left;
+}
+div.manga div.manga_actions a {
+	padding: 0;
+}
+div.manga div.manga_actions input {
+	width: 100%;
+	margin: 5px 0 5px 0;
+}
+
+div.ratings {
+	height: 60px;
+}
+
+div.hollow_rating {
+	background: url("../images/hollow_star.png");
+	background-size: 100% 100%;
+	float: left;
+	height: 45px;
+	width: 45px;
+}
+div.full_rating {
+	background: url("../images/full_star.png");
+	background-size: 100% 100%;
+	float: left;
+	height: 45px;
+	width: 45px;
+}
+
+/* Стили для статики */
+div.manga div.manga_information {
+	float: left;
+	width: 460px;
+	min-height: 300px;
+	margin-bottom: 40px;
+}
+div.manga div.manga_description {
+	float: left;
+	width: 100%;
+	margin-bottom: 30px;
+}
+div.manga div.manga_description p {
+	text-align: justify;
+}
+
+div.manga div.manga_reviews {
+	margin-bottom: 30px;
+}
+
+div.wrap_right div.stat {
+	padding: 5px 0 5px 0;
+}
+div.wrap_right div.stat p {
+	padding: 7px 0 7px 5px;
+	border-left: solid 3px rgba(0, 0, 0, 0.3);
+	border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+}
+
+div.wrap_right div.stat p:hover {
+	transition: .2s;
+	padding-left: 10px;
+	border-left: solid 3px rgba(0, 0, 0, 1);
+	border-bottom: solid 1px rgba(255, 103, 0, 1);
+}
+
+div.wrap_right div.stat p:not(:hover) {
+	transition: .2s;
+}
+
+/*Стили для комментариев*/
+/*========================*/
+div.manga_comments textarea {
+	width: 100%;
+	height: 100px;
+}
+
+div.manga_comments div.comment {
+	width: 100%;
+	min-height: 30px;
+	max-height: 300px;
+	margin: 20px 0 20px 0;
+	padding: 5px 0 5px 0;
+	overflow: hidden;
+	border-left: solid 3px rgba(0, 0, 0, 0.3);
+	border-bottom: solid 1px rgba(255, 103, 0, 0.3);
+}
+
+div.manga_comments div.comment:hover {
+	transition: .2s;
+	border-left: solid 3px rgba(0, 0, 0, 1);
+	border-bottom: solid 1px rgba(255, 103, 0, 1);
+}
+
+div.manga_comments div.comment:not(:hover) {
+	transition: .2s;
+}
+
+div.manga_comments div.comment div.user {
+	width: 10%;
+	height: auto;
+	float: left;
+	margin-right: 1%;
+	margin-left: 1%;
+}
+
+div.manga_comments div.comment div.user img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	padding: 5px;
+	/*border: solid 1px rgba(0,0,0,0.3);*/
+}
+
+div.manga_comments div.comment div.text {
+	width: 80%;
+	float: left;
+}
+div.manga_comments div.comment div.text h3 {
+	margin: 0;
+}
+div.manga_comments div.comment div.text span {
+	color: #eee;
+}
+div.manga_comments div.comment div.text b {
+	font-size: 16pt;
+}
+div.manga_comments div.comment div.text p.cm {
+	padding:5px;
+}
+
+
+/*Стили для страницы добавления главы*/
+/*=====================================*/
+div.chapters_content {
+	border-top: solid 3px rgba(0,0,0,0.3);
+	border-bottom: solid 3px rgba(0,0,0,0.3);
+}
+
+div.chapters_content div.chapter {
+	padding: 3px 0 3px 0;
+	border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+}
+
+div.chapters_content div.chapter:hover {
+	transition: .2s;
+	padding-left: 5px;
+	border-left: solid 3px rgba(0, 0, 0, 1);
+	border-bottom: solid 1px rgba(255, 103, 0, 1);
+}
+
+div.chapters_content div.chapter:not(:hover) {
+	transition: .2s;
+}
+
+/* Стили для страницы главы */
+/*============================*/
+div.wrap_chapter {
+	text-align: center;
+}
+
+div.wrap_chapter div.chapter_image {
+	min-width: 900px;
+	max-width: 1160px;
+	margin: 0 auto;
+	min-height: 1000px;
+}
+
+div.wrap_chapter div.chapter_image img {
+	min-height: 80%;
+	max-height: 100%;
+	object-fit: cover;
+	cursor: pointer;
+}
+
+div.wrap_content select.chapters {
+	width: 450px;
+	float: left;
+}
+
+div.wrap_content div.arrow_left, div.wrap_content div.arrow_right {
+	width: 42px;
+	height: 42px;
+	float: left;
+	border-radius: 3px;
+	background-color: #888;
+	margin: 0px 10px 0px 10px;
+	border: solid 1px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+div.wrap_content div.arrow_left {
+	background: url('http://s1.iconbird.com/ico/2013/3/636/w80h80139396727834.png');
+	background-size: 100% 100%;
+	margin-left: 30px;
+}
+
+div.wrap_content div.arrow_right {
+	background: url('http://s1.iconbird.com/ico/2013/3/636/w80h80139396727835.png');
+	background-size: 100% 100%;
+}
+
+
+div.colour {
+	float: left;
+	width: 120px;
+	height: 20px;
+	overflow: hidden;
+	margin-left: 50px;
+	margin-top: 10px;
+}
+
+div.colour div.color {
+	width: 20px;
+	height: 20px;
+	background-color: #333;
+	display: inline-table;
+	cursor: pointer;
+	border: solid 1px rgba(0,0,0,.3);
+}
+
+div#color1 {background: white;}
+div#color2 {background: #eee;}
+div#color3 {background: #333;}
+div#color4 {background: black;}
+div#color5 {background: transparent;}
+
+select#page {
+	padding: 0;
+	font-size: 13pt;
+}
+
+/*Стили для страницы ошибок*/
+/*===========================*/
+div.error {
+	width: 100%;
+	padding: 20px;
+	border: solid 1px rgba(0, 0, 0, 0.3);
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+div.error h2 {
+	padding: 0;
+	margin: 0;
+}
+
+/*Стили для личного кабинета*/
+/*===========================*/
+div.user_avatar {
+	width: 100%;
+	min-height: 10px;
+	padding: 10px;
+	border: solid 1px rgba(0, 0, 0, 0.3);
+	/*box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);*/
+}
+
+div.user_avatar img {
+	width: 100%;
+	max-height: 600px;
+}
+
+div.user_panel {
+	margin: 20px 0 20px 0;
+	width: 100%;
+	padding: 10px;
+	border: solid 1px rgba(0, 0, 0, 0.3);
+	/*box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);*/
+}
+
+div.user_panel div.head {
+	background-color: #eee;
+	padding: 10px;
+}
+div.user_panel input { width: 100%; }
+
+div.user_panel p {
+	border-left: solid 3px rgba(0, 0, 0, 0.3);
+	border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+	padding: 10px 0px 10px 5px;
+}
+div.user_panel p:hover {
+	transition: .2s;
+	padding-left: 10px;
+	border-left: solid 3px rgba(0, 0, 0, 1);
+	border-bottom: solid 1px rgba(255, 103, 0, 1);
+}
+div.user_panel p:not(:hover) {
+	transition: .2s;
+}
+
+div.personal_info {
+	width: 90%;
+	min-height: 10px;
+	padding: 10px 0 10px 0;
+	margin: 10px 0 10px 0;
+	border-top: solid 3px rgba(0, 0, 0, 0.3);
+	border-bottom: solid 3px rgba(0, 0, 0, 0.3);
+}
+
+div.personal_info p { padding: 5px 0 5px 0; }
+div.personal_info p span { color: gray; }
+div.personal_info input[type=text] { width: 50%; }
+div.personal_info input.background { width: 65%; }
+div.personal_info textarea { width: 100%; }
+
+/* Стили для области пользовательского рейтинга личного кабинета */
+div.personal_info div.user_ratings {
+	margin: 0px 0px 0px 10px ;
+}
+
+div.personal_info div.user_ratings div.rating {
+	padding: 5px 0 5px 5px;
+	border-left: solid 3px rgba(0, 0, 0, 0.3);
+	border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+}
+
+div.personal_info div.user_ratings div.rating p.name {
+	float: left;
+	width: 90%;
+}
+
+div.personal_info div.user_ratings div.rating:hover {
+	transition: .2s;
+	padding-left: 10px;
+	border-left: solid 3px rgba(0, 0, 0, 1);
+	border-bottom: solid 1px rgba(255, 103, 0, 1);
+}
+
+div.personal_info div.user_ratings div.rating:not(:hover) {
+	transition: .2s;
+}
+
+/* Стили для области комментариев личного кабинета */
+div.personal_info div.comments {
+	margin: 0px 0px 0px 10px ;
+}
+
+div.personal_info div.comments div.comment {
+	padding: 5px 0 5px 5px;
+	border-left: solid 3px rgba(0, 0, 0, 0.3);
+	border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+}
+div.personal_info div.comments div.comment p {
+	padding: 5px;
+}
+div.personal_info div.comments div.comment a {
+	padding: 0;
+}
+
+div.personal_info div.comments div.comment:hover {
+	transition: .2s;
+	padding-left: 10px;
+	border-left: solid 3px rgba(0, 0, 0, 1);
+	border-bottom: solid 1px rgba(255, 103, 0, 1);
+}
+
+div.personal_info div.comments div.comment:not(:hover) {
+	transition: .2s;
+}
+
+/* Стили для страницы друзей */
+/*=============================*/
+p.float {
+	float: left;
+	width: 70%;
+}
+
+div.friends	{
+	margin: 0 0 0 10px;
+}
+div.friends h3 {
+	margin: 0; padding: 0;
+}
+div.friends div.friend {
+	overflow: hidden;
+	padding: 5px 0 5px 5px;
+	border-left: solid 3px rgba(0, 0, 0, 0.3);
+	border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+}
+div.friends div.friend:hover {
+	transition: .2s;
+	padding-left: 10px;
+	border-left: solid 3px rgba(0, 0, 0, 1);
+	border-bottom: solid 1px rgba(255, 103, 0, 1);
+}
+
+div.friends div.friend:not(:hover) {
+	transition: .2s;
+}
+
+/* Стили для страницы постов */
+/*=============================*/
+div.private_posts {
+	margin: 0 0 0 10px;
+}
+div.private_posts a {
+	padding: 0;
+}
+div.private_posts h3 {
+	margin: 0; padding: 0;
+}
+div.private_posts div.p_post {
+	overflow: hidden;
+	padding: 5px 0 5px 5px;
+	border-left: solid 3px rgba(0, 0, 0, 0.3);
+	border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+}
+div.private_posts div.p_post:hover {
+	transition: .2s;
+	padding-left: 10px;
+	border-left: solid 3px rgba(0, 0, 0, 1);
+	border-bottom: solid 1px rgba(255, 103, 0, 1);
+}
+
+div.private_posts div.p_post:not(:hover) {
+	transition: .2s;
+}
+
+/*Стили для страницы рецензий*/
+/*=============================*/
+div.private_reviews {
+	margin: 0 0 0 10px;
+}
+div.private_reviews div.review {
+	overflow: hidden;
+	padding: 5px 0 5px 5px;
+	border-left: solid 3px rgba(0, 0, 0, 0.3);
+}
+div.private_reviews div.review:hover {
+	transition: .2s;
+	padding-left: 10px;
+	border-left: solid 3px rgba(0, 0, 0, 1);
+	border-bottom: solid 1px rgba(255, 103, 0, 1);
+}
+div.private_reviews div.review:not(:hover) {
+	transition: .2s;
+}
+
+
+/* Стили для страницы закладок */
+/*===============================*/
+div.bookmarks {
+	margin: 0 0 0 10px;
+}
+div.bookmarks h3 {
+	margin: 0; padding: 0;
+}
+div.bookmarks div.bookmark {
+	overflow: hidden;
+	padding: 5px 0 5px 5px;
+	border-left: solid 3px rgba(0, 0, 0, 0.3);
+	border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+}
+
+div.bookmarks div.bookmark:hover {
+	transition: .2s;
+	padding-left: 10px;
+	border-left: solid 3px rgba(0, 0, 0, 1);
+	border-bottom: solid 1px rgba(255, 103, 0, 1);
+}
+
+div.bookmarks div.bookmark:not(:hover) {
+	transition: .2s;
+}
+
+/*Стили для иконок закладок*/
+/*===========================*/
+
+/* Для главной страницы */
+div.manga_actions div.icons {
+	min-width: 150px;
+	height: 60px;
+	padding: 5px;
+	overflow: hidden;
+}
+
+div.manga_actions div.icons div.icon {
+	float: left;
+	width: 40px;
+	margin-right: 5px;
+	height: 40px;
+	cursor: pointer;
+}
+
+/* Для страницы чтения главы */
+div.chapter_bookmark {
+	float: left;
+	width: 145px;
+	height: 42px;
+	margin-left: 50px;
+	overflow: hidden;
+}
+div.chapter_bookmark span {
+	line-height: 42px;
+}
+div.chapter_bookmark div.icon {
+	height: 42px;
+	width: 42px;
+	cursor: pointer;
+	float: left;
+	background: url("../images/bookmark_off.png") no-repeat;
+	background-size: 100% 100%;
+}
+div.chapter_bookmark div.icon:hover { transition: .2s; background-image: url("../images/bookmark_on.png"); }
+div.chapter_bookmark div.icon:not(:hover) { transition: .2s; }
+
+/* Для страницы закладок */
+
+img.arrow {
+	padding: 11px;
+	width: 23px;
+	height: 23px;
+	float: left;
+}
+
+div.bookmarks div.bookmark div.icons {
+	float: left;
+	width: 145px;
+	height: 30px;
+	overflow: hidden;
+}
+
+div.bookmarks div.bookmark div.icons div.icon {
+	float: left;
+	width: 30px;
+	margin-right: 5px;
+	height: 30px;
+	cursor: pointer;
+	/*border: solid 1px rgba(0,0,0,0.3);*/
+}
+/*Иконка для перехода на главу*/
+/*=====================*/
+img#arrow {background: url("../images/arrow_off.png") no-repeat; background-size: 100% 100%; }
+img#arrow:hover { transition: .2s; background-image: url("../images/arrow_on.png"); }
+img#arrow:not(:hover) { transition: .2s; }
+
+/*Иконка для в планах*/
+/*=====================*/
+div.icons div#planed { background: url("../images/planed_off.png") no-repeat; background-size: 100% 100%; }
+div.icons div#planed:hover { transition: .2s; background-image: url("../images/planed_on.png"); }
+div.icons div#planed:not(:hover) { transition: .2s; }
+
+/*Икона для в процессе*/
+/*======================*/
+div.icons div#watching { background: url("../images/watching_off.png") no-repeat; background-size: 100% 100%; }
+div.icons div#watching:hover { transition: .2s; background-image: url("../images/watching_on.png"); }
+div.icons div#watching:not(:hover) { transition: .2s; }
+
+/*Иконка для прочитано*/
+/*======================*/
+div.icons div#completed { background: url("../images/completed_off.png") no-repeat; background-size: 100% 100%; }
+div.icons div#completed:hover { transition: .2s; background-image: url("../images/completed_on.png"); }
+div.icons div#completed:not(:hover) { transition: .2s; }
+
+/*Икона для в любимых*/
+/*=====================*/
+div.icons div#favorite { background: url("../images/favorite_off.png") no-repeat; transform: scale(1.1); background-size: 100% 100%; }
+div.icons div#favorite:hover { transition: .2s; background-image: url("../images/favorite_on.png"); }
+div.icons div#favorite:not(:hover) { transition: .2s; }
+
+
+
+/*Стили для страницы постов и поста*/
+/*=========================*/
+div.wrap_posts {
+	margin-bottom: 20px;
+}
+
+div.wrap_posts h3 {
+	margin-bottom: 0;
+}
+div.wrap_post {
+	margin: 10px;
+	display: inline-table;
+	text-align: left;
+	width: 47%;
+	min-height: 400px;
+}
+
+div.wrap_post p {
+	font-size: 12pt;
+	padding: 5px 0 5px 0;
+	text-align: justify;
+}
+
+div.wrap_post p.inform {
+	color: gray;
+	text-align: 10pt;
+}
+
+div.wrap_post p.inform a {
+	color: gray;
+}
+
+div.wrap_post p.inform a:hover {
+	transition: .2s;
+	color: #ff6700;
+}
+
+div.wrap_post p.inform a:not(:hover) {
+	transition: .2s;
+}
+
+div.wrap_post a {
+	padding: 0;
+}
+
+div.image_preview {
+	width: 100%;
+	height: 250px;
+	border-radius: 5px;
+	border: solid 1px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+div.image_preview img {
+	width: 100%;
+	height: 250px;
+	border-radius: 5px;
+	object-fit: cover;
+}
+
+/*Для страницы одного поста*/
+div.post {
+	padding: 20px;
+	border-radius: 5px;
+	border: solid 1px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+div.post h3, div.post_comments h3 {
+	padding: 0;
+	margin: 0;
+}
+
+div.post_content {
+	margin: 20px;
+}
+
+div.post_content p {
+	padding: 5px 0 5px 0;
+}
+
+/* Стили для боковой панели страницы постов */
+div.posts_panel {
+	margin: 0px 0 20px 0;
+	width: 100%;
+	border: solid 1px rgba(0, 0, 0, 0.3);
+	border-top-right-radius: 10px;
+}
+
+div.posts_panel h4, div.posts_panel h3 {
+	padding: 10px;
+	margin: 0;
+	cursor: default;
+	background-color: #eee;
+	border-top-right-radius: 10px;
+}
+
+div.posts_panel p, div.posts_panel h4, div.posts_panel h3 {
+	border-left: solid 3px rgba(0, 0, 0, 0.3);
+	border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+	padding: 10px 0px 10px 5px;
+}
+
+div.posts_panel p:hover, div.posts_panel h4:hover, div.posts_panel h3:hover {
+	transition: .2s;
+	padding-left: 10px;
+	border-left: solid 3px rgba(0, 0, 0, 1);
+	border-bottom: solid 1px rgba(255, 103, 0, 1);
+}
+
+div.posts_panel p:not(:hover), div.posts_panel h4:not(:hover), div.posts_panel h3:not(:hover) {
+	transition: .2s;
+}
+
+/*Для блока комментариев поста*/
+div.post_comments {
+	margin: 10px 0 10px 0;
+	width: 100%;
+	min-height: 50px;
+	padding: 20px;
+	border-radius: 5px;
+	border: solid 1px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+div.post_comments h2 {
+	margin-bottom: 10px;
+}
+
+div.post_comments textarea {
+	width: 100%;
+	height: 100px;
+}
+
+div.comment {
+	overflow: hidden;
+	margin: 10px 0 10px 0;
+	padding: 10px 0 10px 0;
+	width: 100%;
+	min-height: 50px;
+	border-left: solid 3px rgba(0, 0, 0, 0.3);
+	border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+}
+
+div.comment:hover {
+	transition: .2s;
+	padding-left: 5px;
+	border-left: solid 3px rgba(0, 0, 0, 1);
+	border-bottom: solid 1px rgba(255, 103, 0, 1);
+}
+
+div.comment:not(:hover) {
+	transition: .2s;
+}
+
+div.comment img {
+	float: left;
+	margin-right: 10px;
+	margin-left: 5px;
+	width: 50px;
+	height: 100%;
+	object-fit: cover;
+}
+
+div.comment p {
+	width: calc(100% - 70px);
+	float: left;
+	margin-bottom: 5px;
+}
+
+div.comment p a {
+	padding: 0;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=-=============================================================================================================================================================================================================================================================================================================================*/
+/*Стили для рецензий*/
+
+div.review_panel {
+	width: 100%;
+	margin: 10px 0 10px 0;
+	border-top-right-radius: 10px;
+	border: solid 1px rgba(0,0,0,0.3);
+}
+
+div.review_panel h4 {
+	padding: 10px 0 10px 5px;
+	background-color: #eee;
+	cursor: default;
+	border-top-right-radius: 10px;
+	border-left: solid 3px rgba(0, 0, 0, 0.3);
+	border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+}
+
+div.review_panel p {
+	padding: 10px 0 10px 5px;
+	cursor: pointer;
+	border-left: solid 3px rgba(0, 0, 0, 0.3);
+	border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+
+	/*rgba(255, 103, 0, 0.3)*/
+}
+
+div.review_panel p:hover, div.review_panel h4:hover {
+	transition: .2s;
+	padding-left: 10px;
+	border-left: solid 3px rgba(0, 0, 0, 1);
+	border-bottom: solid 1px rgba(255, 103, 0, 1);
+}
+
+div.review_panel p:not(:hover), div.review_panel h4:not(:hover) {
+	transition: .2s;
+}
+
+/*Страница рецензий*/
+/*===================*/
+div.wrap_review {
+	border-top: solid 3px rgba(0,0,0,0.5);
+	border-bottom: solid 3px rgba(0,0,0,0.5);
+}
+
+div.review {
+	min-height: 33px;
+	padding: 10px 0 10px 0;
+	overflow: hidden;
+	border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+}
+
+div.review:hover {
+	transition: .2s;
+	padding-left: 5px;
+	border-left: solid 3px rgba(0, 0, 0, 1);
+	border-bottom: solid 1px rgba(255, 103, 0, 1);
+}
+
+div.review:not(:hover) {
+	transition: .2s;
+}
+
+div.review a {
+	padding: 0;
+	color: blue;
+}
+
+div.review a:hover {
+	transition: .2s;
+	color: rgba(255, 103, 0, 1);
+}
+
+div.review a:not(:hover) {
+	transition: .2s;
+}
+
+div.review p {
+	color: gray;
+	font-size: 10pt;
+}
+
+/* Страница одной рецензии */
+/*============================*/
+
+div.review_single {
+	width: 100%;
+	padding: 20px;
+	border-radius: 5px;
+	border: solid 1px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+div.review_content{
+	margin: 20px;
+}
+
+div.review_content p {
+	padding: 5px 0 5px 0;
+}
+
+
+
+
+
+
+/*=============================================================================*/
+/* Стили для страницы диалога */
+
+div.dialog {
+	width: 100%;
+	padding: 10px;
+	min-height: 10px;
+	border: solid 1px rgba(0, 0, 0, 0.3);
+}
+
+div.dialog p.text {
+	color: #333;
+	font-size: 12pt;
+	padding: 5px;
+}
+
+div.dialog div.message {
+	margin: 10px;
+	width: calc(100% - 25px);
+	padding: 5px;
+	min-height: 30px;
+	border: solid 1px rgba(0, 0, 0, 0.3);
+}
+
+div.dialogs {
+	width: 100%;
+	padding: 5px;
+	cursor: pointer;
+	border-left: solid 3px rgba(0,0,0,0.3);
+	border-bottom: solid 1px rgba(0,0,0,0.3);
+}
+
+div.dialogs:hover {
+	transition: .2s;
+	padding-left: 10px;
+	border-left: solid 3px rgba(0, 0, 0, 1);
+	border-bottom: solid 1px rgba(255, 103, 0, 1);
+}
+
+div.dialogs:not(:hover) {
+	transition: .2s;
+}
+
+div.dialogs p {
+	padding: 0;
+	padding-bottom: 5px;
+}
+
+div.dialogs p.text {
+	font-size: 12pt;
+}
+
+div.dialogs a {
+	padding: 0;
+}
+
+
+
